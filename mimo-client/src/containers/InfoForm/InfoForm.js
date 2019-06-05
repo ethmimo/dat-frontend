@@ -72,7 +72,7 @@ export default function SignInSide() {
               margin="normal"
               required
               fullWidth
-              id="search"
+              id="search_field"
               label="Search for User"
               name="search"
               autoComplete="search"
@@ -81,12 +81,24 @@ export default function SignInSide() {
 
             <Button
               type="submit"
+              id="search_button"
               fullWidth
               variant="contained"
               color="primary"
               className={classes.submit}
             >
-              Search MimoTower
+              Search Mimo Tower
+            </Button>
+
+            <Button
+              type="submit"
+              id="fork_button"
+              fullWidth
+              variant="contained"
+              color="primary"
+              className={classes.submit}
+            >
+              Sign Up
             </Button>
         </form>
       </Grid>
@@ -94,20 +106,9 @@ export default function SignInSide() {
       <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
         <div className={classes.paper}>
           <Typography component="h1" variant="h5">
-            Update Mimo Profile
+            Mimo Profile
           </Typography>
           <form className={classes.form} noValidate>
-            <TextField
-              variant="outlined"
-              margin="normal"
-              required
-              fullWidth
-              id="name"
-              label="Full Name"
-              name="name"
-              autoComplete="name"
-              autoFocus
-            />
             <TextField
               variant="outlined"
               margin="normal"
@@ -124,42 +125,19 @@ export default function SignInSide() {
               margin="normal"
               required
               fullWidth
-              id="email"
-              label="Email Address"
-              name="email"
-              autoComplete="email"
+              id="bio"
+              label="Bio"
+              name="bio"
               autoFocus
-            />
-            <TextField
-              variant="outlined"
-              margin="normal"
-              required
-              fullWidth
-              id="address"
-              label="Public Address"
-              name="address"
-              autoComplete="address"
-              autoFocus
-            />
-            <TextField
-              variant="outlined"
-              margin="normal"
-              required
-              fullWidth
-              id="balance"
-              label="Cryptocurrency Balance"
-              name="balance"
-              autoComplete="balance"
-              autoFocus
-            />
-            <Button
+            /><Button
               type="submit"
+              id="update_profile_button"
               fullWidth
               variant="contained"
               color="primary"
               className={classes.submit}
             >
-              Submit to MimoTower
+              Update Profile
             </Button>
             <Box mt={5}>
               <MadeWithLove />
